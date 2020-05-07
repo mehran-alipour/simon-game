@@ -10,6 +10,12 @@ $(document).keypress(function (event) {
     startGame();
   }
 });
+$("#level-title").click(function (event) {
+  if (anykey) {
+    anykey = false;
+    startGame();
+  }
+});
 
 // ChangeLevel
 function changeLevel() {
